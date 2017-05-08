@@ -27,4 +27,8 @@ $(document).ready(function(){
         });
         $(this).toggleClass('message');
     });
+    
+    $(window).on('resize',function(){
+        $('.footer').toggleClass('footer-remove', $(window).width() > 767);
+    }).resize();
 });
